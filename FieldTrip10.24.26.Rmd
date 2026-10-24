@@ -7,7 +7,7 @@ output: pdf_document
 ## Setup
 
 ```{r setup, message=FALSE}
-install.packages('vegan')
+#install.packages('vegan')
 library(vegan)
 ```
 
