@@ -1,0 +1,38 @@
+---
+title: "Conservation Biology Field Trip 10.24.26"
+author: "Ashlee Warren"
+output: pdf_document
+---
+
+## Setup
+
+```{r setup, message=FALSE}
+install.packages('vegan')
+library(vegan)
+```
+
+## Shannon's Diversity Index
+
+```{r Shannon's Diversity Index}
+
+#abundance of each bird species at transect 9
+birds_transect_9 <- c(1,1,2,1,1,1)
+
+#abundance of each bird species at transect 13
+birds_transect_13 <- c(1,1,2,1,3,1,2,1,1,1,1)
+
+#abundance of each bird species at transect 14
+birds_transect_14 <- c(1,1,1,1,8,1,1,1,1,3,1,4,1,1)
+
+#learning about the diversity function
+help(diversity)
+
+#calculating shannon's diversity index for transect 9
+diversity(birds_transect_9)
+
+#calculating shannon's diversity index for transect 13
+diversity(birds_transect_13)
+
+#calculating shannon's diversity index for transect 14
+diversity(birds_transect_14)
+```
